@@ -1,0 +1,17 @@
+# .gitignore
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv
+.env.*
+.uv/
+.DS_Store
+.idea/
+.vscode/
+# Virtual environments
+.venv
+
+# datos
+datos/
+*.zip
