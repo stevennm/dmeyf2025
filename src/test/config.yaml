@@ -1,0 +1,20 @@
+STUDY_NAME: "lgb_optimization_competencia01"
+competencia01:
+  DATA_PATH: "data/competencia_01.csv"
+  #SEMILLA: 123479, 123491, 123493, 123499, 123503
+
+  SEMILLA: 123479
+  MES_TRAIN: [202101, 202102]     # Períodos de entrenamiento
+  MES_VALIDACION: 202103          # Período de validación (usado en Optuna)
+  MES_TEST: 202104               # Período de test (NO usado en Optuna) ⭐
+  GANANCIA_ACIERTO: 780000
+  COSTO_ESTIMULO: 20000
+
+  FINAL_TRAIN: [202101, 202102, 202103, 202104]  # Todos los períodos para entrenar
+  FINAL_PREDIC: 202106
+
+
+  KFOLDS: 5
+  EARLY_STOPPING_ROUNDS: 200
+  NUM_BOOST_ROUND: 3000
+  UMBRAL: 0.025
